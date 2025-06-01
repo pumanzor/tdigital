@@ -15,4 +15,10 @@ module "vpc" {
     Terraform   = "true"
     Environment = "dev"
   }
+
+output "vpc_id" {
+  value = module.vpc.vpc_id
+}
+
+
 }
