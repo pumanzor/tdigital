@@ -24,7 +24,7 @@ resource "aws_security_group" "ssh_access" {
   vpc_id      = var.vpc_id
 
   ingress {
-    description = "SSH desde IP pública permitida"
+    description = "SSH desde IP publica permitida"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
