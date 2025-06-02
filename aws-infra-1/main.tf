@@ -24,6 +24,7 @@ module "security" {
 
 module "ec2" {
   source                = "./modules/ec2"
+subnet_id = module.vpc.public_subnets[0] 
   ssh_key_name          = "mi-clave-ssh"
   security_group_ssh_id = module.security.ssh_access_sg_id
 }
