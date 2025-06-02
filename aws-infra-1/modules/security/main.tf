@@ -20,7 +20,7 @@ resource "aws_security_group" "default_restricted" {
 
 resource "aws_security_group" "ssh_access" {
   name        = "ec2-ssh-access"
-  description = "Permite acceso SSH desde IP pública definida"
+  description = "Permite acceso SSH desde IP publica definida"
   vpc_id      = var.vpc_id
 
   ingress {
