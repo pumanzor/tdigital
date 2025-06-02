@@ -19,11 +19,11 @@ This repository contains a modular and production-grade Terraform configuration 
 | EC2 instance with SSH access (restricted to IP)                          | ✅     |
 | S3 bucket with access control policies                                   | ✅     |
 | EKS cluster with managed node group                                      | ✅     |
-| Route 53 record alias to EKS Load Balancer                               | ⚠️     |
+| Route 53 record alias to EKS Load Balancer                               | ✅     |
 | SSH access restricted via Security Group                                 | ✅     |
 | Full infrastructure defined via Terraform modules                        | ✅     |
 
-> ⚠️ Route 53 zone must already exist and be passed via `route53_zone_id`.
+> ⚠Route 53 zone must already exist and be passed via `route53_zone_id`.
 
 ---
 
